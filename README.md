@@ -58,7 +58,7 @@ void  freeArray(int* arr);
 
 
 
-* You need to execute demo.exe, then you will get the main menu
+* You need to execute [demo.exe](https://github.com/firaskhe/asd_project/releases/tag/v1.0.0), then you will get the main menu
 * Choose which module you want to test
 * For each module there are multiple methods and functions
 * For arrays, you must insert the values of the array value by value for example:
