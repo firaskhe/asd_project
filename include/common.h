@@ -26,7 +26,7 @@ typedef struct DNode {
 typedef struct {
     Node* head;   // first element
     int size;
-} ArrayList;
+} List;
 
 /* Pointer-based doubly linked list */
 typedef struct {

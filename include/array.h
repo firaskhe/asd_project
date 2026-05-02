@@ -28,12 +28,15 @@ void  printMatrix(int m[][MAX_COLS], int rows, int cols);
 void  transposeMatrix(int m[][MAX_COLS], int rows, int cols, int out[][MAX_COLS]);
 void  addMatrices(int a[][MAX_COLS], int b[][MAX_COLS], int r[][MAX_COLS], int rows, int cols);
 void  multiplyMatrices(int a[][MAX_COLS], int b[][MAX_COLS], int r[][MAX_COLS], int n);
+int isSymmetric(int m[][MAX_COLS], int n);
+int sumDiagonal(int m[][MAX_COLS], int n);
+void sortRows(int m[][MAX_COLS], int rows, int cols);
 
 /* --- Dynamic Array --- */
 int*  createDynamicArray(int capacity);
 void  fillArray(int* arr, int size);
 void  printDynamicArray(int* arr, int size);
-int*  resizeArray(int* arr, int newCapacity);
+int*  resizeArray(int* arr, int *newCapacity);
 void  freeArray(int* arr);
 
 #endif
