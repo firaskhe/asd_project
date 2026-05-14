@@ -397,24 +397,15 @@ void printMatrix(int m[][MAX_COLS], int rows, int cols){
 */
 int isSymmetric(int m[][MAX_COLS], int n){
 
-	int x = 0; // counter (IMPORTANT: must be initialized)
-
-	for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
-
-            // Compare element with its transpose
-            if(m[i][j] == m[j][i]){
-                x++;
+    for(int i = 0; i < n; i++){
+        for(int j = i + 1; j < n; j++){
+            if(m[i][j] != m[j][i]){
+                return -1; // not symmetric
             }
         }
     }
 
-    // If all elements match
-    if(x == n * n){
-        return 1; // symmetric
-	}else{
-		return 0; // not symmetric
-	}
+    return 0; // symmetric
 }
 
 /*create a matrix with swapped dimensions */
