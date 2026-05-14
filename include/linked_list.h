@@ -16,6 +16,7 @@ void displayList(List* L);
 void reverseList(List* L);
 void sortListBubble(List* L);
 void mergeSortedLists(List* A, List* B, List* result);
+void freeLinkedList(Node *n);
 
 
 /*======= Doubly Linked List  =======*/
@@ -25,20 +26,7 @@ int insertEndDLL(DLL* L, int value);
 int deleteByValueDLL(DLL* L, int value);
 void displayForward(DLL* L);
 void displayBackward(DLL* L);
-
-
-/*======= Stack  =======*/
-void initStack(Stack* S);
-int push(Stack* S, int value);
-int pop(Stack* S);
-int peek(Stack* S);
-int isEmpty(Stack* S);
-
-/*======= Queue  =======*/
-void initQueue(Queue* Q);
-int enqueue(Queue* Q, int value);
-int dequeue(Queue* Q);
-int front(Queue* Q);
+void freeDLinkedList(DLL *L);
 
 
 #endif
